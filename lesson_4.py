@@ -34,3 +34,7 @@ for i in list(dict):
         char+=i[0]
 char=often_words(char)
 print(char[0][0])
+
+print('Другой способ вывода редкой буквы')
+dict.sort(key=lambda x: x[1])
+print(dict[0][0][0])
